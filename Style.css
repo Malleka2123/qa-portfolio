@@ -41,7 +41,7 @@ html {
 
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -52,7 +52,13 @@ html {
 
 .hero-text h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin: 0 0 1rem 0; /* More bottom spacing */
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-top: 0.5rem; /* Optional: reduce space here */
+  letter-spacing: 1px;
 }
 
 .hero-text span {
@@ -62,11 +68,6 @@ html {
   margin-top: 0.5rem;
 }
 
-.hero-text p {
-  font-size: 1rem;
-  margin-top: 1rem;
-  letter-spacing: 1px;
-}
 
 .scroll-down {
   position: absolute;
