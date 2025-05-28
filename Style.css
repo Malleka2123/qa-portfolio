@@ -5,6 +5,9 @@ body {
   background-color: #fdfdfd;
   color: #333;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Hero Section */
 .hero {
@@ -44,6 +47,7 @@ body {
   text-align: center;
   color: #fff;
   z-index: 2;
+  padding-bottom: 60px; /* ✅ Added padding to avoid overlap */
 }
 
 .hero-text h1 {
@@ -146,4 +150,22 @@ body {
 .site-footer a {
   color: #64ffda;
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text span {
+    font-size: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .scroll-down {
+    font-size: 0.9rem;
+    bottom: 20px;
+  }
 }
