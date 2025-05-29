@@ -5,7 +5,7 @@ body {
   background-color: #fdfdfd;
   color: #333;
 }
-/* Navigation Bar */
+/* Sticky Header */
 .site-header {
   background-color: #111;
   position: fixed;
@@ -15,26 +15,19 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Navigation Container - Center All Content */
 .navbar .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center horizontally */
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 0.75rem 1rem;
 }
 
-.navbar .nav-logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #64ffda;
-  text-decoration: none;
-}
-
+/* Navigation Links Styling */
 .navbar .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -48,6 +41,23 @@ body {
 .navbar .nav-links a:hover {
   color: #64ffda;
 }
+
+/* Sticky Header */
+.site-header {
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Padding for fixed header */
+body {
+  scroll-behavior: smooth;
+  padding-top: 60px;
+}
+
 
 /* Push content down so it's not hidden under the fixed navbar */
 body {
@@ -121,7 +131,7 @@ html {
 
 .scroll-down {
   position: absolute;
-  bottom: 30px;
+  bottom: 60px; /* ⬅️ Increase this to raise the link */
   left: 50%;
   transform: translateX(-50%);
   color: #64ffda;
