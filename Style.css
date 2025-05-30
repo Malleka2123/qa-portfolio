@@ -161,7 +161,7 @@ html {
   font-weight: 500;
 }
 
-/* Skills Section */
+/* Skills Section 
 #skills {
   padding: 2rem;
   background-color: #f0f0f0;
@@ -179,9 +179,9 @@ html {
 
 #skills li {
   margin: 0.5rem 0;
-}
+} */
 
-/* Projects Section */
+/* Projects Section 
 #projects {
   padding: 2rem;
 }
@@ -201,7 +201,7 @@ html {
 
 .project-card h3 {
   margin-top: 0;
-}
+} */
 
 /* Footer */
 .site-footer {
